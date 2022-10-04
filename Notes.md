@@ -46,7 +46,7 @@ while spam < 5:
 ➎ print('Access granted.')    
 
 # If the user enters any name besides Joe ➊, the continue statement ➋ causes the program execution to jump back to the start of the loop
-
+```
 ## for 
 block of code only a certain number of times
 
@@ -57,3 +57,11 @@ If you accidentally name one of your programs, say, random.py, and use an import
 - example, from random import *.
 
 With this form of import statement, calls to functions in random will not need the random. prefix. However, using the full name makes for more readable code, so it is better to use the import random form of the statement.
+
+- def hello(name):
+    ➋ print('Hello, ' + name)
+
+➌ hello('Alice')
+   hello('Bob')
+
+[Define, Call, Pass, Argument, Parameter](https://automatetheboringstuff.com/2e/chapter3/#Define,%20Call,%20Pass,%20Argument,%20Parameter)
