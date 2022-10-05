@@ -65,3 +65,42 @@ With this form of import statement, calls to functions in random will not need t
    hello('Bob')
 
 [Define, Call, Pass, Argument, Parameter](https://automatetheboringstuff.com/2e/chapter3/#Define,%20Call,%20Pass,%20Argument,%20Parameter)
+
+- the value that a function call evaluates to is called the return value of the function.
+
+```py
+➊ import random
+
+➋ def getAnswer(answerNumber):
+    ➌ if answerNumber == 1:
+           return 'It is certain'
+       elif answerNumber == 2:
+           return 'It is decidedly so'
+       elif answerNumber == 3:
+           return 'Yes'
+       elif answerNumber == 4:
+           return 'Reply hazy try again'
+       elif answerNumber == 5:
+           return 'Ask again later'
+       elif answerNumber == 6:
+           return 'Concentrate and ask again'
+       elif answerNumber == 7:
+           return 'My reply is no'
+       elif answerNumber == 8:
+           return 'Outlook not so good'
+       elif answerNumber == 9:
+           return 'Very doubtful'
+
+➍ r = random.randint(1, 9)
+➎ fortune = getAnswer(r)
+➏ print(fortune)
+```
+
+Similarly, when you pass multiple string values to print(), the function will automatically separate them with a single space. 
+
+## Variable Scope : 
+- scope as a container for variables. When a scope is destroyed, all the values stored in the scope’s variables are forgotten. 
+- outside all functions are said to exist in the global scope.
+- A variable either local or Global not both
+
+Wiwi
