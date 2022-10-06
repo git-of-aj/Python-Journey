@@ -121,3 +121,18 @@ def check(name):
 check("Ananay")
 print (global_var)
 ```
+- You can't not directly start working (operating --> + / - etc) on variables || Need to asssign them a Value first ......
+- `Return` works with only `def` 
+- for loop no need to return auto global .... 
+
+```py 
+total = 0 # WHEN OIUTSIDE LOOP --> VALUE IS IMMUTABLE
+for num in range(1,101):
+     print(num)
+     # total = 0  --> When inside loop, it's value TURNS 0 with Evry ITERATION
+     total = num + total
+     print ('the total now is: ' + str(total))
+     
+print ('')
+print('the Total Sum from 1 to 100 is : ' + str(total))
+```
