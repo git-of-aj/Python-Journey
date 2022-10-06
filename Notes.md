@@ -103,4 +103,21 @@ Similarly, when you pass multiple string values to print(), the function will au
 - outside all functions are said to exist in the global scope.
 - A variable either local or Global not both
 
-Wiwi
+#### variable Scope Error 
+- **UnboundLocalError: local variable 'c' referenced before assignment** : This erorr indiactes that you are trying to modify `Global variable` which is not permitted
+- Use `Global` keyword / Statement to get poermisssion --> for changing value of Global_var
+```py
+global_var = "mangu"
+
+def check(name):
+    name= "aansh"
+    #print(global_var)
+    print('LOCAL VAR: ' + name)
+    print('changing global var now ........')
+    global global_var
+    global_var = "Changed var Name"
+   # print('this is the global var:- ' + global_var)
+
+check("Ananay")
+print (global_var)
+```
