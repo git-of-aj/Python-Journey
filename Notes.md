@@ -100,6 +100,20 @@ Similarly, when you pass multiple string values to print(), the function will au
 
 ## Variable Scope : 
 - scope as a container for variables. When a scope is destroyed, all the values stored in the scope’s variables are forgotten. 
+- Function --> first finds the variable within its scope --> IF NO --> Then goes for GLOBAL
+```py
+def spam():
+    ➊ eggs = 99
+    ➋ bacon()
+    ➌ print(eggs)
+
+   def bacon():
+       ham = 101
+    ➍ eggs = 0
+
+➎ spam()
+# the output is 99 coz the scope bacon is now destroyed
+````
 - outside all functions are said to exist in the global scope.
 - A variable either local or Global not both
 
@@ -139,3 +153,9 @@ print('the Total Sum from 1 to 100 is : ' + str(total))
 - `Return` : value that a function call evaluates to is called the return value of the function.
 - `None` : since all function calls need to evaluate to a return value, print() returns None
 || Behind the scenes, Python adds return None to the end of any function definition with no return statement.
+
+## Try - Except & Finally
+### Try : 
+- Python tries best to run it 
+### Except: 
+- As soon as error in try block ; Except block runs ; then exits 
