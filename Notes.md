@@ -136,3 +136,6 @@ for num in range(1,101):
 print ('')
 print('the Total Sum from 1 to 100 is : ' + str(total))
 ```
+- `Return` : value that a function call evaluates to is called the return value of the function.
+- `None` : since all function calls need to evaluate to a return value, print() returns None
+|| Behind the scenes, Python adds return None to the end of any function definition with no return statement.
