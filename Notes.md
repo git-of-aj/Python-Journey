@@ -159,3 +159,18 @@ print('the Total Sum from 1 to 100 is : ' + str(total))
 - Python tries best to run it 
 ### Except: 
 - As soon as error in try block ; Except block runs ; then exits 
+
+```PY
+def spam(divideBy):
+    try:
+        return 42 / divideBy
+    except ZeroDivisionError: # 2. Moves to except block 
+        print('Error: Invalid argument.')
+
+print(spam(2))
+print(spam(12))
+print(spam(0)) # 1.  try block throws error 
+print(spam(1)) # 3.  execution again returns to normal path after running exept block 
+
+# NOTE : once the execution jumps to the code in the except clause, it does not return to the try clause. Instead, it just continues moving down the program as normal.
+```
