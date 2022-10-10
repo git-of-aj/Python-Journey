@@ -46,3 +46,20 @@ spam = [['cat', 'bat'], [10, 20, 30, 40, 50]]
 
 **NOTE : The number of variables and the length of the list must be exactly equal, or Python will give you a ValueError:**
 
+## Enumerate Function, Random choice, random shuffle
+```
+supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
+>>> for index, item in enumerate(supplies):
+...     print('Index ' + str(index) + ' in supplies is: ' + item)
+
+Augmented Assignment of Variables
+```py
+spam = 'Hello,'
+>>> spam += ' world!'
+>>> spam
+'Hello world!'
+>>> bacon = ['Zophie']
+>>> bacon *= 3
+>>> bacon
+['Zophie', 'Zophie', 'Zophie']
+```
