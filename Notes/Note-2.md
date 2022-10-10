@@ -27,3 +27,5 @@ spam = [['cat', 'bat'], [10, 20, 30, 40, 50]]
 >>> spam[1][4]
 50
 ```
+- Lists values can be changed(varname / new-value = list[index], del list[index], replicated list*number, concatenate [L1,l2] L= list
+- [intelligently use list with for loop]()
