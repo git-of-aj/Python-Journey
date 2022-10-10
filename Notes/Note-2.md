@@ -29,3 +29,20 @@ spam = [['cat', 'bat'], [10, 20, 30, 40, 50]]
 ```
 - Lists values can be changed(varname / new-value = list[index], del list[index], replicated list*number, concatenate [L1,l2] L= list
 - [intelligently use list with for loop]()
+
+### Multiple Variable Assignment 
+
+```py
+>>> cat = ['fat', 'gray', 'loud']
+>>> size = cat[0]
+>>> color = cat[1]
+>>> disposition = cat[2]
+
+# you could type this line of code:
+
+>>> cat = ['fat', 'gray', 'loud']
+>>> size, color, disposition = cat
+```
+
+**NOTE : The number of variables and the length of the list must be exactly equal, or Python will give you a ValueError:**
+
