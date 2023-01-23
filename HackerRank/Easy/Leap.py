@@ -1,5 +1,31 @@
+# ------------------------------------------------------------------------------------
 # any year divisible by 400 and 4 is a leap year
+# -----------------------------------------------------------------------------------
 
+
+# HACKER RANK SAYS THE YEAR DIVIDED BY 4 IS LEAP AS LONG AS IT IS NOT CLEARLY DIVISIBLE BY 100
+# AND A YEAR DIVISIBLE BY 400 IS SURELY LEAP
+
+#-----------------------------------------------------------------------------
+# THIS WORKS
+
+def is_leap(year):
+    leap = False
+    # Write your logic here
+    if (year % 4 == 0) and (year % 100 != 0):
+        return True
+    elif (year % 400 == 0):
+        return True
+    else:
+        return False 
+    
+    return leap
+
+year = int(input()).strip()
+
+
+
+#--------------------------------------------------------------------
 year = int(input())
 #return year
 
