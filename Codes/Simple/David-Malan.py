@@ -32,3 +32,16 @@ print("".join(list1))
 list1 = " geeks "
 print("$".join(list1))
 # the above prints = $g$e$e$k$s$ ==> $ in begin & end = space
+
+#--------------------------------------------------------------------
+
+string = "abracadabra"
+l = list(string)
+# replace a with k
+l[5] = 'k'
+
+string = ''.join(l)
+# '' => means add no space nothing b/w every item of variable l
+# join function joins elements of a sequence and makes it a string.
+# if the iterable contains any non-string values, it raises a TypeError exception.  
+print(string)
