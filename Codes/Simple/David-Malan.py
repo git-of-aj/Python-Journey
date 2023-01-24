@@ -18,3 +18,17 @@ def hello(friend):
 hello(friend = "World") # specifying argument here.... instead of inside function
 # if you delete input .. Prints Hello World
 # more: https://www.freecodecamp.org/news/python-function-examples-how-to-declare-and-invoke-with-parameters-2/
+
+
+#---------------------------
+'''
+# Joining with empty separator
+list1 = ['g', 'e', 'e', 'k', 's']
+print("".join(list1))
+# the above prints geeks
+
+'''
+# Joining with string
+list1 = " geeks "
+print("$".join(list1))
+# the above prints = $g$e$e$k$s$ ==> $ in begin & end = space
