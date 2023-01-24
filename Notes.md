@@ -174,3 +174,19 @@ print(spam(1)) # 3.  execution again returns to normal path after running exept 
 
 # NOTE : once the execution jumps to the code in the except clause, it does not return to the try clause. Instead, it just continues moving down the program as normal.
 ```
+### Join 
+```
+list1 = {'1', '2', '3', '4', '4'}
+
+# put any character to join
+s = "-#-"
+
+# joins elements of list1 by '-#-'
+# and stores in string s
+s = s.join(list1)
+
+# join use to join a list of
+# strings to a separator s
+print(s)
+print('this prints ===> 1-#-3-#-2-#-4')
+``` 
