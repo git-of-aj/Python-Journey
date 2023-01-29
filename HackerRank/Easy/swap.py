@@ -16,3 +16,11 @@ if __name__ == '__main__':
     s = input()
     result = swap_case(s)
     print(result)
+    
+    
+    # -----------------------------------
+    
+    ''' Using build in  String Mehod --> swap case '''
+    
+sentence = input("enter: ")
+print(sentence.swapcase())
