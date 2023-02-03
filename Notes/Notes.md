@@ -1,5 +1,7 @@
 ## Variable scope
-'''py
+
+```py
+
 def scope_test():
     def do_local():
         spam = "local spam"
@@ -22,12 +24,14 @@ def scope_test():
 
 scope_test()
 print("In global scope:", spam)
-'''
+
+```
 
 Result: 
-'''
+
+```
 After local assignment: test spam
 After nonlocal assignment: nonlocal spam
 After global assignment: nonlocal spam
 In global scope: global spam
-'''
+```
