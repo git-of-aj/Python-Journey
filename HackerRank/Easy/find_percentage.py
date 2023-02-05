@@ -23,4 +23,15 @@ if __name__ == '__main__':
     print(f"The Average marks for {query_name} is {avg:.2f}")
     # avg: .2f means round it off to 2 decimal places.
 
+    # --------------------------------------------------------------------------------------------------------------------
+    
+ N = int(input())
+STUDENT_MARKS = {}
+
+for line in range(N):
+    info = input().split(" ")
+    grades = list(map(float, info[1:]))
+    STUDENT_MARKS[info[0]] = sum(grades) / float(len(grades))
+
+print("%.2f" % round(STUDENT_MARKS[input()], 2))
 
