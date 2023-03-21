@@ -1,3 +1,18 @@
+------------------------------------------------------------------------
+# INSTALLATION OF VENV (AND FLASK)
+# VENV == YOUR ISOLATED ISLAND IN THE SEA OF PYTHON
+# APP INSTALLED IN THIS VENV ARE SEPERATED FROM REST OF PYTHON IN YOUR MACHINE
+
+#create dir
+mkdir this_is_venv
+#create a vnev with name 
+python3 -m venv this_is_venv
+# activate 
+this_is_venv\scripts\activate             or ./this_is_venv/bin/activate  --> for linux
+
+#install flask
+pip install flask
+----------------------------------------------------------------------
 # import Flask class from Flask module
 # Flask function - WSGI application.
 # WSGI: 
