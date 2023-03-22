@@ -16,9 +16,9 @@ pip install flask
 # import Flask class from Flask module
 # Flask function - WSGI application.
 # WSGI: 
-from flask import Flask
+from flask import Flask                             # 💡we import Capital F --> Flask small F gives error --> unable to find module
 
-# __name__ represents presen file
+# __name__ represents present file
 # flask(__name__):
 # let the Flask function knows where to look for resources such as templates and static files.
 app = Flask(__name__)
@@ -48,4 +48,27 @@ flask run --port 5001
 # NOTES
 '''
 1. give name app.py only else vaery very errors
+'''
+
+'''
+Why do we return in Flask not Print???
+ check and debug the code below?
+ 
+'''
+ 
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    name = (input('please enter your name: '))
+    print(name)
+  
+'''
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+please enter your name: annaay
 '''
