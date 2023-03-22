@@ -39,3 +39,19 @@ Results of the print statements respectively:
 Notice how it handles passed agruments as variables, stores unspecified varibles like /next as query string in the url..
 
 '''
+
+DIY:
+    
+from flask import Flask, url_for
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    link = url_for("timer_greets", name="/<name>")
+    return f"<h1> Welcome to Timer - Python</h1> <a href='{link}'>visit here to Get a Hi 👋</a> <h2> append your name after URL like: /name see magic <h2>"
+
+@app.route("/<name>")
+def timer_greets(name):
+    return f"Hi {name}, It's Timer "
+
