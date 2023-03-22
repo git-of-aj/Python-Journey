@@ -38,3 +38,24 @@ def timer_greets(name):
 ```
 ## Dynamic Pages -- Templates 
 **A template contains variables and/or expressions, which get replaced with values when a template is rendered; and tags, which control the logic of the template. **
+
+```py
+from flask import Flask, url_for, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello(name='Ananay'):
+    static_files = url_for('static', filename='test.html')
+
+    template_url = url_for('temp', name=name)
+    return f"Hi {name}, It's Timer <a href='{static_files}'>This is HTML Page !!</a> visit <a href='{template_url}'>for dynamic python page</a>"
+
+@app.route("/<name>")
+def temp(name):
+    return render_template('index.html.jinja', name=name)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+```
