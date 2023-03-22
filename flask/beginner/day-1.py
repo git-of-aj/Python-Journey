@@ -15,7 +15,9 @@ pip install flask
 ----------------------------------------------------------------------
 # import Flask class from Flask module
 # Flask function - WSGI application.
-# WSGI: 
+# WSGI: a special server that can host python webapp --> https://www.fullstackpython.com/wsgi-servers.html
+
+
 from flask import Flask                             # 💡we import Capital F --> Flask small F gives error --> unable to find module
 
 # __name__ represents present file
@@ -31,7 +33,7 @@ def hello_world():
 #----------------------------------------------
 # flask command or python -m flask like this: 
 # flask run 
-# flask run --host=0.0.0.0 --> hosts app over your private ip 
+# flask run --host=0.0.0.0 --> hosts app over your private ip --> visible to other machines <private-ip>:port instead of local host 😊
 
 '''
 * Running on http://127.0.0.1:5000
