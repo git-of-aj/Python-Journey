@@ -36,3 +36,5 @@ def timer_greets(name):
  # Point 2
  url_for('../static',filename = 'index.html')
 ```
+## Dynamic Pages -- Templates 
+**A template contains variables and/or expressions, which get replaced with values when a template is rendered; and tags, which control the logic of the template. **
