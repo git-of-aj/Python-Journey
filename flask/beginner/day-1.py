@@ -74,3 +74,8 @@ WARNING: This is a development server. Do not use it in a production deployment.
 Press CTRL+C to quit
 please enter your name: annaay
 '''
+---------------------------------------------------
+-------------------------------------------------
+Beginner Frinedly Advice:
+    flask run --debug
+  Shows detailed error page in localhost
