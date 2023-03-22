@@ -1,6 +1,7 @@
 '''
 If your application is placed outside the URL root, for example, in /myapplication instead of /, url_for() properly handles that for you.
-url_for == ahref in HTML
+url_for() is a Flask method that generates a URL for a given endpoint.
+url_for == ahref in HTML (somewhat simiar)
 url_for (name-of-python-function-to-answer-this,argument1,argument2,so on)
 more in docs: https://flask.palletsprojects.com/en/2.2.x/quickstart/#url-building
 '''
