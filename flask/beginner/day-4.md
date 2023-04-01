@@ -128,3 +128,5 @@ if __name__ == "__main__":
 </body>
 </html>
 ```
+## Observation;
+- In your HTML template using python functions like : len(list) doesn't works --> `<h2>TOtal Letters in your name: {{len(alphabets)}}</h2>` gives error  --> jinja2.exceptions.UndefinedError: 'len' is undefined
