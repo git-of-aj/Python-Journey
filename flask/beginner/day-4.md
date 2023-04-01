@@ -59,3 +59,25 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 ```
+
+## Debugging 
+
+it looks for files under template directory unless specified otherwise 
+```py
+from flask import Flask, url_for , render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return '<h1> Hey There </h1>'
+
+@app.route('/timer')
+def timer():
+    return render_template("./static/test.html")
+# RAISE ERROR COZ IT'S UNDER A DIFFERENT DIRECTORY CALLED STATIC
+
+if __name__ == "__main__" :
+    app.run(debug=True)
+
+```
