@@ -82,3 +82,49 @@ if __name__ == "__main__" :
     app.run(debug=True)
 
 ```
+
+## using all data types in html
+
+```py
+from flask import Flask, url_for , render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return '<h1> Hey There </h1>'
+
+@app.route("/<name>")
+def hi(name):
+    letters_list = list(name)
+    letters_dict = {'letter1': letters_list[0],'letter2': letters_list[1],
+                    'start-2-end': f"there start 2 end {letters_list[0:]}"}
+    # return render_template("filename under template folder", variables)
+    return render_template("index.html", name = name, alphabets = letters_list, key_value = letters_dict)
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
+```
+
+```html
+// THIS IS HTML FILE UNDER TEMPLATE folder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Hello {{name}} 😊 </h1>
+    <h2> There is lists from python :</h2>
+    <p> {{alphabets}}</p>
+    <h2> There is key-value from python :</h2>
+    <p> {{key_value}}</p>
+    <h3> here is a specific key-value name : {{key_value['start-2-end']}}</h3>
+    
+</body>
+</html>
+```
