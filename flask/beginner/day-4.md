@@ -49,6 +49,7 @@ def hello(name='Ananay'):
     static_files = url_for('static', filename='test.html')
 
     template_url = url_for('temp', name=name)
+    # here name = name means ==> variable-specified-inside-template = value-to-be-taken
     return f"Hi {name}, It's Timer <a href='{static_files}'>This is HTML Page !!</a> visit <a href='{template_url}'>for dynamic python page</a>"
 
 @app.route("/<name>")
