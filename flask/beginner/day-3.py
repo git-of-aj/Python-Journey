@@ -24,8 +24,13 @@ def profile(username):
 
 with app.test_request_context():
     print(url_for('hello'))
+    
     print(url_for('login'))
+    # notice above we are giving function name defined under @aap.route('/login')
+    
     print(url_for('login', next='/'))
+    
+    # make a customised login page for a user -> 
     print(url_for('profile', username='John Doe'))
     
 '''
