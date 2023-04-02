@@ -3,6 +3,11 @@ If your application is placed outside the URL root, for example, in /myapplicati
 url_for() is a Flask method that generates a URL for a given endpoint.
 url_for == ahref in HTML (somewhat simiar)
 url_for (name-of-python-function-to-answer-this,argument1,argument2,so on)
+
+To show up static files
+
+url_for('foldername',filename='file.html')
+
 more in docs: https://flask.palletsprojects.com/en/2.2.x/quickstart/#url-building
 '''
 
