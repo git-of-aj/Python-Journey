@@ -1,9 +1,26 @@
 # Problem: https://www.hackerrank.com/challenges/no-idea/problem
 
 # USE THIS IN HACKKERRANK:
+initial_input = input().split()
+array = input().split()
+A = set(input().split())
+B = set(input().split())
 
+score = 0
 
-# THE BELOW IS OPTIMISED FOR YOUR OWN UNDERTSANDINH
+for i in array:
+    if i in A:
+        score += 1
+    if i in B:
+        score -= 1
+
+print(score)
+
+#========================================================================
+
+# THE BELOW IS OPTIMISED FOR YOUR OWN UNDERstanding
+
+# =========================================================================
 '''
 !!!!!!!! THE BELOW CODE ACCEPTS RESULTS IN DIFEERENT LINE NOT SPACE SEPERATED !!!!!!!
 def set_creator(num1):
