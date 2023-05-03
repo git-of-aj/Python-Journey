@@ -45,3 +45,10 @@ print(num_list)
 user_value = map(int,input("Value Pls: ").split(" "))
 print(set(user_value))
   
+a = {1,2,3,4,5}
+for n in a:
+    # match = int(input("match: "))
+    if n == int(input("match: ")):
+        print("gotcha")
+    else:
+        break
